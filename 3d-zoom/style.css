@@ -27,6 +27,9 @@ body {
 
 #left span,
 #right span {
+    padding: 8px;
+    background: #FAFAFA;
+    color: #212121;
     font-size: 2em;
     animation: zoomy-left 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite;
 }
@@ -37,19 +40,23 @@ body {
 @keyframes zoomy-left {
     0%, 100% {
         transform: scale(1) translateX(10px);
+        box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     }
 
     50% {
-        transform: scale(2) translateX(-10px);
+        transform: scale(1.25) translateX(-10px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     }
 }
 
 @keyframes zoomy-right {
     0%, 100% {
         transform: scale(1) translateX(-10px);
+        box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     }
 
     50% {
-        transform: scale(2) translateX(10px);
+        transform: scale(1.25) translateX(10px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     }
 }
